@@ -27,9 +27,18 @@
 
         }
     </div>
+
+    <div class="row">
+        <h2> Matches Found: @matchesFound </h2>
+    </div>
 </div>
 
+
+
+
 @code {
+
+    // C# Code
 
     List<string> animalEmoji = new List<string>()
     {
@@ -45,6 +54,8 @@
 
 
     List<string> shuffledAnimals = new List<string>();
+    int matchesFound = 0;
+
 
     protected override void OnInitialized()
     {
